@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\IT Surface\Batch-Oct22\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+230462729.index

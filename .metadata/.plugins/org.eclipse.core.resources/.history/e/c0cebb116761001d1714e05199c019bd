@@ -1,0 +1,120 @@
+package samplePackage;
+
+public class ConditionalStatement {
+
+	public static void main(String[] args) {
+		
+		int cash = 500;
+		
+//		if(cash == 500) {
+//			System.out.println("Lets go to Niagra Falls");
+//		}else {
+//			System.out.println("Stay home");
+//		}
+		
+		//String light = "pink";
+		
+//		if (light == "green") {
+//			System.out.println("car will go");
+//		}else if(light == "red") {
+//			System.out.println("car will stop");
+//		}else if(light == "yellow") {
+//			System.out.println("slow down");
+//		}else if(light == "blue") {
+//			System.out.println("speed up");
+//		}else {
+//			System.out.println("invalid color");
+//		}
+		
+		
+		
+		
+		//if mark is greater than or equals to 90 then grade is A
+		//if mark is greater than or equals to 80 then grade is B
+		//if mark is greater than or equals to 70 then grade is C
+		//if mark is greater than or equals to 60 then grade is D
+		//if mark is greater than or equals to 80 then grade is E
+		//other than these values the grade is F		
+		
+		int mark = 110;
+		
+		if(mark >= 90 && mark <= 100) {
+			System.out.println("Grade A");
+		}else if(mark >= 80) {
+			System.out.println("Grade B");
+		}else if(mark >= 70) {
+			System.out.println("Grade C");
+		}else {
+			System.out.println("Grade F");
+		}
+		
+		
+		
+		
+		
+		
+		
+//		int a = 30;    // a = 40
+//		int b = 30;
+//		
+//		//< or >
+//		//find out the largest value variable 
+//		//also check if they are equal or not
+//		//if they are equal then print "They are equal"
+//		
+//	
+//		if(b > a) {
+//			System.out.println("b have the largest value");
+//		}else if(a > b) {
+//			System.out.println("a have the largest value");
+//		}else{
+//			System.out.println("They are equal");
+//		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		boolean raining = true; 
+//		boolean snowing = true;
+//		boolean cloudy = false;
+//		
+//		if(raining == true || snowing == true || cloudy == true) {
+//			System.out.println("don't go outside");
+//		}else {
+//			System.out.println("Go outside");
+//		}
+		
+//		if(snowing == true) {
+//			System.out.println("don't go outside");
+//		}else {
+//			System.out.println("Go outside");
+//		}
+//		
+//		if(cloudy == true) {
+//			System.out.println("don't go outside");
+//		}else {
+//			System.out.println("Go outside");
+//		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
