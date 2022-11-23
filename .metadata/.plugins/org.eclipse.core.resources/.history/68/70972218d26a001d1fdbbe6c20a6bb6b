@@ -1,0 +1,56 @@
+package advanceTopic;
+
+public class ProblemSolving {
+
+	public static void main(String[] args) {
+		
+		String[] names = new String[5];
+		
+		names[0] = "My Name";
+		names[1] = "Your Name";
+		names[2] = "someone else name";
+		names[3] = "something";
+		names[4] = "new";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		String name = "name";
+		
+		if(name == "no name") {
+			System.out.println("name found");
+		}else {
+			System.out.println("name not found");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
