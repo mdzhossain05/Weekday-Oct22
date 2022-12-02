@@ -44,6 +44,7 @@ public class SimpleFunctionLearning {
 		addingIntNumbers2.addingTwoIntNumbers(10, 20);
 		
 		AddingIntNumbers addingIntNumbers3 = new AddingIntNumbers();
+		addingIntNumbers3.number = 5;
 		addingIntNumbers3.addingTwoIntNumbers(20, 20);
 		
 		AddingIntNumbers addingIntNumbers4 = new AddingIntNumbers();
@@ -52,7 +53,6 @@ public class SimpleFunctionLearning {
 		AddingIntNumbers addingIntNumbers5 = new AddingIntNumbers();
 		addingIntNumbers5.addingTwoIntNumbers(60, 20);
 		
-		addingIntNumbers.addingTwoIntNumbers(10, 20);
 //		AddingIntNumbers ain = new AddingIntNumbers();
 //		ain.additon(10, 20);
 //		
