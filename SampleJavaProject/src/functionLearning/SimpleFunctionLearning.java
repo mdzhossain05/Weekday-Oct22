@@ -34,7 +34,29 @@ public class SimpleFunctionLearning {
 //		simpleFunctionLearning2.addingTwoDoubleNumbers(10.20, 20.20);
 		
 		AddingIntNumbers addingIntNumbers = new AddingIntNumbers();
-		addingIntNumbers.addingFourIntNumbers(10, 20, 30, 60);
+//		addingIntNumbers.addingFourIntNumbers(10, 20, 30, 60);
+//		addingIntNumbers.addingStringAndInt("anyName", 22222);
+		addingIntNumbers.number = 2;
+		addingIntNumbers.addingTwoIntNumbers(10, 20);
+		
+		AddingIntNumbers addingIntNumbers2 = new AddingIntNumbers();
+		addingIntNumbers2.number = 4;
+		addingIntNumbers2.addingTwoIntNumbers(10, 20);
+		
+		AddingIntNumbers addingIntNumbers3 = new AddingIntNumbers();
+		addingIntNumbers3.number = 5;
+		addingIntNumbers3.addingTwoIntNumbers(20, 20);
+		
+		AddingIntNumbers addingIntNumbers4 = new AddingIntNumbers();
+		addingIntNumbers4.addingTwoIntNumbers(50, 20);
+		
+		AddingIntNumbers addingIntNumbers5 = new AddingIntNumbers();
+		addingIntNumbers5.addingTwoIntNumbers(60, 20);
+		
+//		AddingIntNumbers ain = new AddingIntNumbers();
+//		ain.additon(10, 20);
+//		
+//		AddingIntNumbers.additon(50, 50);
 		
 	}
 	
@@ -52,5 +74,18 @@ public class SimpleFunctionLearning {
 		double c = a + b;
 		System.out.println(c);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
