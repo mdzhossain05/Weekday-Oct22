@@ -17,16 +17,20 @@ public class AddingIntNumbers {
 		
 	}
 	
-	public void addingThreeIntNumbers(int a, int b, int c) {
+// Access modifier 		return type			function name			Parameters
+	public 				int 				addingThreeIntNumbers(int a, int b, int c) {
 		int d = a + b + c;
-		System.out.println(d);
-		System.out.println(number);
+		return d;
 	}
 	
-	public void addingFourIntNumbers(int h, int i, int j, int m) {
+	public int addingFourIntNumbers(int h, int i, int j, int m) {
 		int k = h + i + j + m;
-		System.out.println(k);
+		
+		
+		return k;
 	}
+	
+
 	
 	// Create a function, which will take your string name and int zip code
 	// and print it in the console. 
