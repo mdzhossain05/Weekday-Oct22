@@ -30,6 +30,23 @@ public class AddingIntNumbers {
 		return k;
 	}
 	
+	
+	public String  yourName(String anyName) {
+		String name = anyName + "Your Name";
+		return name;
+	}
+	
+	public String any (int a, int b) {
+		String result = "";
+		
+		if(a == b) {
+			result = "equals";
+		}else {
+			result = "not equal";
+		}
+		
+		return result;
+	}
 
 	
 	// Create a function, which will take your string name and int zip code

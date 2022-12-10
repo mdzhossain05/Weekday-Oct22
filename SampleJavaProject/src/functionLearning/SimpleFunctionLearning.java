@@ -67,16 +67,20 @@ public class SimpleFunctionLearning {
 		int sumOfThree = addingIntNumbers5.addingThreeIntNumbers(10, 20, 30);
 		
 		int sumOfFour = addingIntNumbers5.addingFourIntNumbers(50, 60, 70, 80);
-	
+		
 		System.out.println(sumOfThree);
 		System.out.println(sumOfFour);
+		
+		
 		
 		int result = sumOfFour - sumOfThree;
 		System.out.println(result);
 		
 		SampleFunction sampleFunction = new SampleFunction();
-		sampleFunction.anythingPrint();
+//		sampleFunction.anythingPrint();
 		
+		System.out.println(addingIntNumbers5.yourName("no name"));
+		System.out.println(addingIntNumbers5.any(200, 300));
 	}
 	
 	public void addingTwoIntNumbers(int a, int b) {
