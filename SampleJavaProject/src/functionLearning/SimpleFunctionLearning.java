@@ -81,6 +81,25 @@ public class SimpleFunctionLearning {
 		
 		System.out.println(addingIntNumbers5.yourName("no name"));
 		System.out.println(addingIntNumbers5.any(200, 300));
+		
+		//data types are divided into two types
+		// primitive data types - int, double, boolean
+		// non-primitive data types - String, Array
+		
+		String anyName = new String("Your name");
+		String name = "My name";	
+		String noName = "My name";
+
+		if(name == noName) {
+			System.out.println("Test passed");
+		}else {
+			System.out.println("Test Failed");
+		}
+		System.out.println(anyName + name);
+		
+		
+		
+		
 	}
 	
 	public void addingTwoIntNumbers(int a, int b) {

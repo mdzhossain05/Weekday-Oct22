@@ -1,6 +1,8 @@
 package basicSelenium;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumLearning {
@@ -20,15 +22,39 @@ public class SeleniumLearning {
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		
-		driver.getTitle();
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "swag labs";
+		
+		System.out.println(actualTitle);
+		System.out.println(expectedTitle);
+		
+		if(actualTitle.equalsIgnoreCase(expectedTitle)) {
+			System.out.println("Test passed");
+		}else {
+			System.out.println("Test Failed");
+		}
 		
 		
+		// 8 locators are used to locate any web element
+		WebElement usernameTextbox = driver.findElement(By.name("user-name"));
+		usernameTextbox.sendKeys("standard_user");
 		
-		Thread.sleep(5000);
+		WebElement passwordTextbox = driver.findElement(By.id("password"));
+		passwordTextbox.sendKeys("secret_sauce");
 		
-		driver.close();
+		WebElement loginButton = driver.findElement(By.id("login-button"));
+		loginButton.click();
 		
-		//class will start again at 8:40
+		WebElement pageTitle = driver.findElement(By.className("title"));
+		String pageTitleText = pageTitle.getText();
+		
+		System.out.println(pageTitleText);
+		
+		boolean isPageTitleDisplaying = pageTitle.isDisplayed();
+		System.out.println(isPageTitleDisplaying);
+//		driver.close();
+		
+		
 	}
 
 }
