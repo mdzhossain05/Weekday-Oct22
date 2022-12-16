@@ -19,6 +19,9 @@ public class Amazon {
 		WebElement holidayGiftGuideLink = driver.findElement(By.partialLinkText("Gift Guide"));
 		
 		holidayGiftGuideLink.click();
+		
+		
+		
 	}
 
 }
