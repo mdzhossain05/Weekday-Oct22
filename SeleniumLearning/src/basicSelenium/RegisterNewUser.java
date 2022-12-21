@@ -1,9 +1,13 @@
 package basicSelenium;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterNewUser {
 
@@ -15,6 +19,18 @@ public class RegisterNewUser {
 		driver.get("https://demowebshop.tricentis.com/");
 		
 		driver.manage().window().maximize();
+		
+		
+		// class will start at 8:45
+		
+		
+		//Dynamic waits - Implicite wait, explicit wait, Fluent wait
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ico-register"))));
+		
+//		Thread.sleep(15000);
 		
 		WebElement registerLink = driver.findElement(By.className("ico-register"));
 		registerLink.click();
@@ -32,7 +48,7 @@ public class RegisterNewUser {
 		
 		WebElement emailTextbox = driver.findElement(By.id("Email"));
 		emailTextbox.clear();
-		emailTextbox.sendKeys("zakir.hossain10@gmail.com");
+		emailTextbox.sendKeys("zakir.hossain11@gmail.com");
 		
 		WebElement passwordTextbox = driver.findElement(By.name("Password"));
 		passwordTextbox.clear();
@@ -72,7 +88,7 @@ public class RegisterNewUser {
 //		WebElement continueButtonAXpath = driver.findElement(By.xpath("html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[2]/input"));
 //		continueButtonAXpath.click();
 		
-		//Relative xpath - //tag name[@attribute name = "value"]
+		//Relative xpath - //tag name[@attribute name = 'value']
 		WebElement continueButtonRXpath = driver.findElement(By.xpath("//input[@class='button-1 register-continue-button']"));
 		continueButtonRXpath.click();
 		
@@ -80,6 +96,9 @@ public class RegisterNewUser {
 		//8 locators - class name, name, id, link Text, partial link text, tag name
 		//css selector
 		//xpath - absolute xpath & relative xpath
+		
+		
+		
 	}
 
 }
