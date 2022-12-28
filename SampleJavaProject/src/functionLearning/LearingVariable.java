@@ -6,7 +6,7 @@ public class LearingVariable {
 	public static void main(String[] args) {
 		
 		//Global variable
-		int a = 10; 
+		int a; 
 		int b = 20;
 		
 		{
@@ -16,7 +16,7 @@ public class LearingVariable {
 			System.out.println(c);
 			System.out.println(a); //50
 		}
-		
+		System.out.println(a);
 		{
 		a = 100;
 		System.out.println(a);//50
