@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-29T21:37:43 EST" name="Suite" finished-at="2022-12-29T21:37:43 EST" duration-ms="256">
+    <groups>
+      <group name="smoke">
+        <method signature="BasicTestngLearning.testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testB" class="basicTestng.BasicTestngLearning"/>
+        <method signature="BasicTestngLearning.testC()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testC" class="basicTestng.BasicTestngLearning"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="BasicTestngLearning.testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testB" class="basicTestng.BasicTestngLearning"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-12-29T21:37:43 EST" name="Test" finished-at="2022-12-29T21:37:43 EST" duration-ms="256">
+      <class name="basicTestng.BasicTestngLearning">
+        <test-method signature="testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" started-at="2022-12-29T21:37:43 EST" name="testB" finished-at="2022-12-29T21:37:43 EST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method signature="testC()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" started-at="2022-12-29T21:37:43 EST" name="testC" finished-at="2022-12-29T21:37:43 EST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+      </class> <!-- basicTestng.BasicTestngLearning -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

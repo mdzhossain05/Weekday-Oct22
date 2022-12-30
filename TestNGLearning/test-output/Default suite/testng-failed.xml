@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basicTestng.SauceDemo">
+      <class name="com.swagLabs.sauceDemo.testScript.StandardUserLogin">
         <methods>
           <include name="closeBrowser"/>
-          <include name="sauceDemoLogin"/>
+          <include name="userName"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- basicTestng.SauceDemo -->
+      </class> <!-- com.swagLabs.sauceDemo.testScript.StandardUserLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
