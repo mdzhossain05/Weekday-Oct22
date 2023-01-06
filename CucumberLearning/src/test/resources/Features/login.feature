@@ -5,18 +5,20 @@
 # Feature, Scenario, Given, When, And, Then, But, Scenario Outline, Examples, Background, Description
 Feature: Sauce demo login feature
 
-Scenario: positive testing with standard user
 
-Given open  the google chrome browser and Go to sauce demo app
-When user enter standard_user in username text box
-When user enter secret_sauce in password Text box
-And user click on login button
-Then user should be in Product page
-
-Scenario: negative testing with locked out user
+Scenario Outline: Login functionality testing
 
 Given open the google chrome browser and Go to sauce demo app
-When user enter locked_out_user in username text box
-When user enter secret_sauce in password Text box
+When user enter "<userName>" in username text box
+When user enter "<password>" in password Text box
 And user click on login button
 Then user should be in Product page
+
+Examples: 
+#data table
+|userName|password|
+|standard_user|secret_sauce|
+|locked_out_user|secret_sauce|
+|problem_user|secret_sauce|
+
+

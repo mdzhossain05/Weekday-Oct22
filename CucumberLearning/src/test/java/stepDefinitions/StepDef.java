@@ -4,8 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.*;
+
 
 public class StepDef {
 	WebDriver driver;
@@ -16,6 +18,12 @@ public class StepDef {
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
+	}
+	
+	@When("user enter {string} in username text box")
+	public void user_enter_in_username_text_box(String userName) {
+		WebElement usernameTextbox = driver.findElement(By.name("user-name"));
+		usernameTextbox.sendKeys(userName);
 	}
 
 	@When("user enter standard_user in username text box")
@@ -28,6 +36,18 @@ public class StepDef {
 	public void user_enter_locked_out_user_in_username_text_box() {
 		WebElement usernameTextbox = driver.findElement(By.name("user-name"));
 		usernameTextbox.sendKeys("locked_out_user");
+	}
+	
+	@When("user enter performance_glitch_user in username text box")
+	public void user_enter_performance_glitch_user_in_username_text_box() {
+		WebElement usernameTextbox = driver.findElement(By.name("user-name"));
+		usernameTextbox.sendKeys("performance_glitch_user");
+	}
+	
+	@When("user enter {string} in password Text box")
+	public void user_enter_in_password_text_box(String password) {
+		WebElement passwordTextbox = driver.findElement(By.id("password"));
+		passwordTextbox.sendKeys(password);
 	}
 
 	@When("user enter secret_sauce in password Text box")
@@ -47,11 +67,7 @@ public class StepDef {
 		String actualUrl=driver.getCurrentUrl();
 		  String expectedUrl="https://www.saucedemo.com/inventory.html";
 		  
-		  if(actualUrl.equals(expectedUrl)) {
-		  System.out.println("test pass");
-		  }else {
-		   System.out.println("test failed");
-		  }
+		  Assert.assertEquals(expectedUrl, actualUrl);
 	}
 	
 	
