@@ -2,6 +2,7 @@ package com.swagLabs.sauceDemo.testScript;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.swagLabs.sauceDemo.pageObjects.LoginPage;
@@ -20,4 +21,8 @@ public class BaseClass {
 		loginPage = new LoginPage(driver);
 	}
 
+	@AfterTest
+	public void closeBrowser() {
+		driver.quit();
+	}
 }

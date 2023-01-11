@@ -39,9 +39,9 @@ public class ProblemUserLogin extends BaseClass{
 		loginPage.loginButton();
 	}
 
-	@AfterTest
+	
 	public void closeBrowser() {
-		driver.quit();
+		driver.close();
 	}
 	
 }
