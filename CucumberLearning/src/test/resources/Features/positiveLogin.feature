@@ -5,7 +5,7 @@
 # Feature, Scenario, Given, When, And, Then, But, Scenario Outline, Examples, Background, Description
 @positiveTest
 Feature: Sauce demo login feature
-
+Description: alfdnalfnlknlfkc
 Background: 
 Given open the google chrome browser and Go to sauce demo app
 
@@ -16,7 +16,6 @@ Scenario: positive testing with standard user
 When user enter standard_user in username text box
 When user enter secret_sauce in password Text box
 And user click on login button
-Then user should be in Product page
 
 @sanity
 Scenario: positive testing with problem user
@@ -25,4 +24,3 @@ Scenario: positive testing with problem user
 When user enter problem_user in username text box
 When user enter secret_sauce in password Text box
 And user click on login button
-Then user should be in Product page

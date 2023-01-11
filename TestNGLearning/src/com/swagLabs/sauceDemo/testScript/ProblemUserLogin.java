@@ -9,19 +9,19 @@ import org.testng.annotations.Test;
 import com.swagLabs.sauceDemo.pageObjects.LoginPage;
 
 
-public class ProblemUserLogin {
-	LoginPage loginPage;
-	WebDriver driver;
+public class ProblemUserLogin extends BaseClass{
+//	LoginPage loginPage;
+//	WebDriver driver;
 	
-	@BeforeTest
-	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "D:\\IT Surface\\Oct_batch-Soft\\chromedriver.exe");
-		driver = new ChromeDriver();
-		// URL - Unified Resource Locator
-		driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-		loginPage = new LoginPage(driver);
-	}
+//	@BeforeTest
+//	public void setUp() {
+//		System.setProperty("webdriver.chrome.driver", "D:\\IT Surface\\Oct_batch-Soft\\chromedriver.exe");
+//		driver = new ChromeDriver();
+//		// URL - Unified Resource Locator
+//		driver.get("https://www.saucedemo.com/");
+//		driver.manage().window().maximize();
+//		loginPage = new LoginPage(driver);
+//	}
 	
 	
 	@Test(priority = 1)

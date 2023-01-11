@@ -10,29 +10,29 @@ import org.testng.annotations.Test;
 import com.swagLabs.sauceDemo.pageObjects.LoginPage;
 
 
-public class StandardUserLogin {
-	LoginPage loginPage;
-	WebDriver driver;
+public class StandardUserLogin extends BaseClass{
+//	LoginPage loginPage;
+//	WebDriver driver;
 	
-	@BeforeTest
-	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "D:\\IT Surface\\Oct_batch-Soft\\chromedriver.exe");
-		driver = new ChromeDriver();
-		// URL - Unified Resource Locator
-		driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-		loginPage = new LoginPage(driver);
-	}
+//	@BeforeTest
+//	public void setUp() {
+//		System.setProperty("webdriver.chrome.driver", "D:\\IT Surface\\Oct_batch-Soft\\chromedriver.exe");
+//		driver = new ChromeDriver();
+//		// URL - Unified Resource Locator
+//		driver.get("https://www.saucedemo.com/");
+//		driver.manage().window().maximize();
+//		loginPage = new LoginPage(driver);
+//	}
 	
-	@Parameters("userName")
+//	@Parameters("userName")
 	@Test(priority = 1)
-	public void userName(String userN) {
-		loginPage.userNameTextbox().sendKeys(userN);
+	public void userName() {
+		loginPage.userNameTextbox().sendKeys("standard_user");
 	}
 
 	@Test(priority = 2)
 	public void password() {
-		loginPage.passwordTextbox();
+		loginPage.passwordTextbox().sendKeys("secret_sauce");;
 	}
 
 	@Test(priority = 3)

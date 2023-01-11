@@ -5,9 +5,9 @@
     <classes>
       <class name="com.swagLabs.sauceDemo.testScript.StandardUserLogin">
         <methods>
+          <include name="setUp"/>
           <include name="closeBrowser"/>
           <include name="userName"/>
-          <include name="setUp"/>
         </methods>
       </class> <!-- com.swagLabs.sauceDemo.testScript.StandardUserLogin -->
     </classes>

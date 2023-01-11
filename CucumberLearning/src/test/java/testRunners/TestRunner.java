@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = "src/test/resources/Features",
 		glue = "stepDefinitions",
-		plugin = {"html:target/output"},
+		plugin = {"pretty","html:target/output.html"},
 		tags = "@positiveTest"
 		)
 
