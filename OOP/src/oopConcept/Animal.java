@@ -1,7 +1,7 @@
 package oopConcept;
 
 public class Animal {
-	int a = 100;
+//	private int a = 100;
 	
 	public void eat() {
 		System.out.println("eating");

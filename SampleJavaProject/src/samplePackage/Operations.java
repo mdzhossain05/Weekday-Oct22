@@ -2,6 +2,7 @@ package samplePackage;
 
 public class Operations {
 
+
 	public static void main(String[] args) {
 		//+, -, *, /
 		int numberOne = 100;
@@ -62,7 +63,7 @@ public class Operations {
 		
 		int finalValue = someValue + 100 + 200; 
 		
-		System.out.println(finalValue);
+//		System.out.println(finalValue);
 		
 		
 		
@@ -74,12 +75,28 @@ public class Operations {
 		
 		
 		
+		System.out.println("Something");
+		
+//		try - catch
+		
+		int a = 100;
+		int b = 0;
+		int c = 0;
+		
+		// Exception Handling - try catch block
+		try {
+		c = a/b;
+		}catch(Exception e) {
+			System.out.println("The issue is a can not be divided by b because "+e.getMessage());
+		}finally{
+			System.out.println("You want to print something");
+		}
 		
 		
+		System.out.println(c);
 		
 		
-		
-		
+		System.out.println("Nothing");
 		
 	}
 

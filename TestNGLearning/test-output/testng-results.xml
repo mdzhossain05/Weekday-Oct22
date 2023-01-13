@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-29T21:37:43 EST" name="Suite" finished-at="2022-12-29T21:37:43 EST" duration-ms="256">
+  <suite started-at="2023-01-12T19:46:27 EST" name="Failed suite [Default suite]" finished-at="2023-01-12T19:46:36 EST" duration-ms="9458">
     <groups>
-      <group name="smoke">
-        <method signature="BasicTestngLearning.testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testB" class="basicTestng.BasicTestngLearning"/>
-        <method signature="BasicTestngLearning.testC()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testC" class="basicTestng.BasicTestngLearning"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="BasicTestngLearning.testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" name="testB" class="basicTestng.BasicTestngLearning"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-12-29T21:37:43 EST" name="Test" finished-at="2022-12-29T21:37:43 EST" duration-ms="256">
-      <class name="basicTestng.BasicTestngLearning">
-        <test-method signature="testB()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" started-at="2022-12-29T21:37:43 EST" name="testB" finished-at="2022-12-29T21:37:43 EST" duration-ms="31" status="PASS">
+    <test started-at="2023-01-12T19:46:27 EST" name="Default test(failed)" finished-at="2023-01-12T19:46:36 EST" duration-ms="9458">
+      <class name="com.swagLabs.sauceDemo.testScript.StandardUserLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swagLabs.sauceDemo.testScript.StandardUserLogin@29e495ff]" started-at="2023-01-12T19:46:27 EST" name="setUp" finished-at="2023-01-12T19:46:35 EST" duration-ms="8231" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method signature="testC()[pri:0, instance:basicTestng.BasicTestngLearning@2beee7ff]" started-at="2022-12-29T21:37:43 EST" name="testC" finished-at="2022-12-29T21:37:43 EST" duration-ms="9" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="userName()[pri:1, instance:com.swagLabs.sauceDemo.testScript.StandardUserLogin@29e495ff]" started-at="2023-01-12T19:46:35 EST" name="userName" finished-at="2023-01-12T19:46:36 EST" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testC -->
-      </class> <!-- basicTestng.BasicTestngLearning -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- userName -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.swagLabs.sauceDemo.testScript.StandardUserLogin@29e495ff]" started-at="2023-01-12T19:46:36 EST" name="closeBrowser" finished-at="2023-01-12T19:46:36 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.swagLabs.sauceDemo.testScript.StandardUserLogin -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

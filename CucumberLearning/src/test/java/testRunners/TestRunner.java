@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/resources/Features",
 		glue = "stepDefinitions",
 		plugin = {"pretty","html:target/output.html"},
-		tags = "@positiveTest"
+		tags = "@positiveTest",
+		monochrome = true
 		)
 
 public class TestRunner {

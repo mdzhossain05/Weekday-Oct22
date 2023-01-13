@@ -1,9 +1,25 @@
 package oopConcept;
 
 public class Human extends Animal{
+	int b = 10;
+	public Human() {
+		
+	}
 	
-	int a = 10;
+	public Human(int a) {
+		b = a;
+	}
 	
+	private int a = 10;
+	
+	public int getA() {
+		return a;
+	}
+
+	public void setA(int a) {
+		this.a = a;
+	}
+
 	public void coding() {
 		System.out.println("We can code");
 	}

@@ -9,7 +9,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import com.google.common.base.Verify;
 import com.swagLabs.sauceDemo.pageObjects.LoginPage;
 
 
@@ -56,10 +58,20 @@ public class LoginScript {
 
 	@AfterTest
 	public void closeBrowser() {
+		// Assertion
+//		1. Assert - Hard Assert
+//		2. soft Assert - 
+		
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		String actualUrl = driver.getCurrentUrl();
-		Assert.assertEquals(actualUrl, expectedUrl);
-		Assert.assertTrue(true);
+		
+		SoftAssert sa = new SoftAssert();
+		
+		sa.assertEquals(actualUrl, expectedUrl);
+		
+		
+//		Assert.assertEquals(actualUrl, expectedUrl);
+//		Assert.assertTrue(true);
 //		driver.quit();
 	}
 	
