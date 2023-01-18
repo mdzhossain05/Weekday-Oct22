@@ -26,7 +26,7 @@ public class LearningOOP {
 //		System.out.println(sc.a);
 		
 		
-		Animal animal = new Animal();
+		Animal animal = new Human();
 		animal.eat();
 		animal.sleep();
 		

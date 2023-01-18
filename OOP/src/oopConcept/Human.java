@@ -10,7 +10,7 @@ public class Human extends Animal{
 		b = a;
 	}
 	
-	private int a = 10;
+	int a = 10;
 	
 	public int getA() {
 		return a;
