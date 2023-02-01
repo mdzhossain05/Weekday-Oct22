@@ -1,8 +1,12 @@
 package oopConcept;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 public class LearningOOP {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AWTException {
 
 //		OOP - Object Oriented Programming
 //		apie
@@ -40,8 +44,13 @@ public class LearningOOP {
 		
 		Cat cat = new Cat();
 		cat.scratch();
-		cat.eat();
 		
+		
+		
+		Robot robot = new Robot();
+		
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 
 	}
 
